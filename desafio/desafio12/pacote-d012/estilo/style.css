@@ -58,15 +58,29 @@ section.normal{
 section.imagem{
     background-color: rgba(233, 98, 231, 0.574);
     color: aliceblue;
-
-
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.571);
+    background-size: cover;
+    background-attachment:fixed ;
+}
+section >p{
+    padding-bottom: 2em;
 }
 section.imagem >p{
     display: inline-block;
     padding: 10px;
-    background-color: rgba(114, 17, 121, 0.387);
+    background-color: rgba(114, 17, 121, 0.184);
+    text-shadow: 2px 2px 1px black;
 
+}
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    
+    
 }
 footer{
     text-align: center;
