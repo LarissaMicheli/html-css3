@@ -34,7 +34,7 @@ header > h1{
 }
 span{
     background-color: #52394fc5;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     text-shadow: #52394F;
     padding: 10px;
