@@ -16,16 +16,18 @@ body, html{
     
 }
 header{
-    background-color: #A73B9B;
+    background-color: #52394F;
 }
 header > h1{
     padding: 10px;
     text-align: center;
+    font-size: 1.3em;
 }
 span{
     background-color: #FC05E0;
     width: 100vw;
     text-align: center;
+    text-shadow: #D227BE;
     padding: 10px;
     cursor: pointer;
 }
@@ -48,7 +50,7 @@ menu > ul > li > a{
     border-top: 2px solid #FC05E0;
 }
 menu > ul > li > a:hover{
-    background-color: #FC05E0;
+    background-color: #FCB6E0;
 }
 main{
     width: 90vw;
