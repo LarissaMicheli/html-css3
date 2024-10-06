@@ -11,12 +11,21 @@
     margin: 0px;
     padding: 0px;
 }
+
 body, html{
-    background-color: #D227BE;
+    
+    background-image: url(../imagens/pexels-miami302-16191165.jpg) ;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
     
 }
 header{
-    background-color: #52394F;
+    background-image: linear-gradient(#FCB6E0, #52394fd2);
 }
 header > h1{
     padding: 10px;
@@ -24,10 +33,10 @@ header > h1{
     font-size: 1.3em;
 }
 span{
-    background-color: #FC05E0;
+    background-color: #52394fc5;
     width: 100vw;
     text-align: center;
-    text-shadow: #D227BE;
+    text-shadow: #52394F;
     padding: 10px;
     cursor: pointer;
 }
@@ -44,23 +53,24 @@ menu > ul > li > a{
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: #52394F;
+    background-image: linear-gradient(#fcb6e0d2, #52394fae);;
     color: white;
     text-align: center;
-    border-top: 2px solid #FC05E0;
+    border-top: 2px solid #52394F;
 }
 menu > ul > li > a:hover{
     background-color: #FCB6E0;
 }
 main{
-    width: 90vw;
-    background-color: #FCB6E0;
+    max-width: 300px;
+    background-color: #f7bee0b8;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 article > h2{
+    
     padding-bottom: 20px;
    
 }
@@ -69,8 +79,15 @@ article > h2 > a{
     text-decoration: none;
 
 }
+a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #52394fe3 ;
+}
 a:hover{
-    color: #FC05E0;
+    color: #52394F;
+    
+
 }
 article > p {
     text-align: justify;
@@ -78,7 +95,7 @@ article > p {
     text-indent: 20px;
 }
 aside{
-    background-color: rgba(255, 192, 234, 0.907);
+    background-color: rgba(255, 192, 234, 0.355);
     border-radius: 20px 1=20 px 0px 0px;
     text-align: center;
     margin-top: 10px;

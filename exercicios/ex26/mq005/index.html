@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
+    <title>Poemas</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Poema</h1>
         <span class="material-symbols-outlined" onclick="clickMenu()">
@@ -15,18 +16,18 @@
             </span>
         <menu id="itens">
             <ul>
-                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">A greve dos bichos, de Severino Milanês da Silva</a></li>
-                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Nas asas da leitura, de Costa Senna</a></li>
-                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Redes sociais, de Bráulio Bessa</a></li>
-                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">ABC do Nordeste, de Patativa do Assaré</a></li>
-                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">A seca do Ceará, de Leandro Gomes de Barros</a></li>
+                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Poema 1</a></li>
+                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Poema 2</a></li>
+                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Poema 3</a></li>
+                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Poema 4</a></li>
+                <li><a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Poema 5</a></li>
 
             </ul>
         </menu>
     </header>
     <main>
         <article>
-                <h2>A corrida da vida, de <a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external">Bráulio Bessa</a></h2>
+                <h2>A corrida da vida, de <a href="https://www.todamateria.com.br/exemplos-de-cordel/" target="_blank" rel="external"><strong>Bráulio Bessa</strong></a></h2>
             <p>
                 Na corrida dessa vida <br>
                 é preciso entender <br>
@@ -71,12 +72,20 @@
 
             <aside>
                 <p>Sobre o cordel: estas são as três primeiras e a última estrofes de "A corrida da vida", cordel composto por 10 estrofes. Ele tem como tema a vida e a rapidez com que ela passa, motivo pelo qual precisa ser aproveitada.</p>
-                <p>Sobre o autor: <a href="https://www.brauliobessa.com/" target="_blank" rel="external">Bráulio Bessa</a> é cearense e nasceu em 1985. Fã do cordelista Patativa do Assaré, começou a escrever seus versos com 14 anos. Ficou muito conhecido no Brasil quando ganhou um quadro fixo num programa da rede Globo</p>
+                <p>Sobre o autor: <a href="https://www.brauliobessa.com/" target="_blank" rel="external"><strong>Bráulio Bessa</strong></a> é cearense e nasceu em 1985. Fã do cordelista Patativa do Assaré, começou a escrever seus versos com 14 anos. Ficou muito conhecido no Brasil quando ganhou um quadro fixo num programa da rede Globo</p>
             </aside>
         </article>
 
     </main>
     <script>
+    function mudouTamanho(){
+        if(window.innerWidth >= 768 ){
+            itens.style.display ='block'
+        }else{
+            itens.style.display ='none'
+        }
+    }
+
         function clickMenu(){
             
             if (itens.style.display == 'block'){
